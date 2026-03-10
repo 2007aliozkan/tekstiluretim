@@ -1,19 +1,57 @@
-<section class="hero">
-  <h1>Tekstil Otomasyonunda Yeni Nesil</h1>
-  <p>Hata payını sıfıra indiren, verimi zirveye taşıyan modüler çözümler.</p>
-  <button>Projeyi Keşfet</button>
-</section>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TexAuto | Geleceğin Tekstil Üretimi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<style>
-  .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('tekstil-bg.jpg');
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    font-family: sans-serif;
-  }
-</style>
+    <header class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1 class="fade-in">TEX-AUTO SYSTEMS</h1>
+            <p class="subtitle">Endüstri 4.0 Standartlarında Akıllı Tekstil Otomasyonu</p>
+            <div class="stats-brief">
+                <span>%99 Hassasiyet</span> | <span>7/24 Otonom</span> | <span>%30 Enerji Tasarrufu</span>
+            </div>
+            <button id="exploreBtn" class="btn-primary">Sistemi Keşfet</button>
+        </div>
+    </header>
+
+    <main id="detailsSection" class="hidden">
+        <section class="container">
+            <h2 class="section-title">Operasyonel Mükemmellik</h2>
+            
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Akıllı Kesim Hattı</h3>
+                    <p>Yapay zeka tabanlı nesting algoritmaları ile kumaş fire oranını minimize eder. Milimetrik lazer kesim ile hatasız üretim sağlar.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👁️</div>
+                    <h3>Vision-AI Denetimi</h3>
+                    <p>Yüksek çözünürlüklü optik sensörler, dokuma hatalarını ve leke analizini üretim anında gerçekleştirir.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>SCADA & Veri Analitiği</h3>
+                    <p>Tüm üretim hattı verileri bulut tabanlı dashboard üzerinden anlık izlenebilir ve raporlanabilir.</p>
+                </div>
+            </div>
+
+            <div class="technical-specs">
+                <h3>Teknik Spesifikasyonlar</h3>
+                <p>Sistemimiz, <strong>Modbus TCP/IP</strong> ve <strong>MQTT</strong> protokollerini destekleyerek mevcut ERP altyapınıza tam entegre çalışır. Prediktif bakım modülü sayesinde mekanik arızalar %85 oranında önceden tespit edilir.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
